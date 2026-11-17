@@ -31,6 +31,7 @@ class UserMaterialTransformer extends Fractal\TransformerAbstract
             $json_data['userId'] = $userMaterial['user_id'];
             $json_data['materialId'] = $userMaterial['material_id'];
             $json_data['stockAmount'] = $userMaterial['stock_amount'];
+            $json_data['stockUnit'] = $userMaterial['stock_unit'];
             $json_data['price'] = $userMaterial['price'];
             $json_data['vendor'] = $userMaterial['vendor'];
             $json_data['vendorCode'] = $userMaterial['vendor_code'];

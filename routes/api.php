@@ -65,6 +65,7 @@ $api->version('v1', function (Router $api) {
         $api->group(['middleware' => 'jwt.auth'], function (Router $api) {
             $api->get('/addMaterial/{materialId}', 'App\\Api\\V1\\Controllers\\Glazy\\UserMaterialController@addMaterial')->name('addMaterial');
             $api->get('/', 'App\\Api\\V1\\Controllers\\Glazy\\UserMaterialController@index')->name('index');
+            $api->patch('/{id}', 'App\\Api\\V1\\Controllers\\Glazy\\UserMaterialController@update')->name('update');
             $api->delete('/{id}', 'App\\Api\\V1\\Controllers\\Glazy\\UserMaterialController@destroy')->name('destroy');
         });
     });

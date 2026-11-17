@@ -16,9 +16,15 @@ class UserMaterial extends Model
 
     protected $fillable = [
         'stock_amount',
+        'stock_unit',
         'price',
         'vendor',
         'vendor_code'
+    ];
+
+    protected $attributes = [
+        'stock_amount' => null,
+        'stock_unit' => null
     ];
 
     public function user()
